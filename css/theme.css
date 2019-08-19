@@ -21,6 +21,6 @@
 .w3-hover-text-theme:hover {color:#C4E2B6 !important}
 .w3-hover-border-theme:hover {border-color:#607d8b !important}
 
-.accordion {background-color: #eee;color: #444;cursor: pointer;padding: 1px;width: 100%;border: none;text-align: left;outline: none;font-size: 15px;transition: 0.4s;}
+.accordion {position:absolute;right:0;top:0; background-color: #eee;color: #444;cursor: pointer;padding: 1px;width: 100%;border: none;text-align: left;outline: none;font-size: 15px;transition: 0.4s;}
 .expand {padding: 0 18px;display: none;background-color: #eee;overflow: hidden;}
 .active, .accordion:hover {background-color: #ccc;}
