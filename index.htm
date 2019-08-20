@@ -63,7 +63,13 @@
 
 </body>
 <!--Scripts -->
+<script src="js/jquery-3.4.1.min.js"></script>
 <!--Accordion-->
+<script>
+$("button").click(function(){
+  $(this).find('i').toggleClass('fa-plus fa-minus')
+});
+</script>
 <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
