@@ -72,18 +72,15 @@
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
       this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.maxHeight){
-        panel.style.maxHeight = null;
+      var expand = this.nextElementSibling;
+      if (expand.style.display === "block") {
+        expand.style.display = "none";
       } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
+        expand.style.display = "block";
+      }
     });
   }
   </script>
-
-
-
 <!--Sidebar-->
 <script src='js/icons.js'></script>
 <script>
