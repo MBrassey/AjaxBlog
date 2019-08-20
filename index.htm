@@ -65,22 +65,14 @@
 <!--Scripts -->
 <!--Accordion-->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    $('button').on('click', function () {
-      $(this)
-        .find('[data-fa-i2svg]')
-        .toggleClass('fa-plus')
-        .toggleClass('fa-minus');
-    });
-  });
-</script>
-<script>
   var acc = document.getElementsByClassName("accordion");
   var i;
   
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
       this.classList.toggle("active");
+      .toggleClass('fa-plus')
+        .toggleClass('fa-minus');
       var expand = this.nextElementSibling;
       if (expand.style.display === "block") {
         expand.style.display = "none";
