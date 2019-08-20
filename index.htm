@@ -64,7 +64,16 @@
 </body>
 <!--Scripts -->
 <!--Accordion-->
-
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    $('button').on('click', function () {
+      $(this)
+        .find('[data-fa-i2svg]')
+        .toggleClass('fa-plus')
+        .toggleClass('fa-minus');
+    });
+  });
+</script>
 <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
