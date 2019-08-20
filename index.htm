@@ -63,7 +63,11 @@
 
 </body>
 <!--Scripts -->
+<script src="js/jquery-3.4.1.min.js"></script>
 <!--Accordion-->
+$("button").click(function(){
+  $(this).find("i").removeClass("fa-star-o").addClass("fa-truck");
+});
 <script>
   var acc = document.getElementsByClassName("accordion");
   var i;
