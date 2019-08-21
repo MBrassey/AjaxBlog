@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <!--Scripts-->
+  <!--jQuery-->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!--ContentWindow Loader-->
   <script>
@@ -9,6 +11,42 @@
       
       });
       </script>
+<!--Accordion-->
+<script>
+    $("button").click(function(){
+      $(this).find('i').toggleClass('fa-plus fa-minus')
+    });
+    </script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var expand = this.nextElementSibling;
+          if (expand.style.display === "block") {
+            expand.style.display = "none";
+          } else {
+            expand.style.display = "block";
+          }
+        });
+      }
+      </script>
+    <!--Sidebar-->
+    <script src='js/icons.js'></script>
+    <script>
+        function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
+    <!--Epsi-->
+    <script src="/live2d-widget-model-epsilon2_1/live2d-widget-model-epsilon2_1/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d-widget-model-epsilon2_1/","pluginJsPath":"live2d-widget-model-epsilon2_1/lib/","pluginModelPath":"live2d-widget-model-epsilon2_1/assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2d-widget-model-epsilon2_1/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.model.json"},"display":{"position":"right","width":150,"height":279},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+    
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
     <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
@@ -44,43 +82,6 @@
 </div>
 
 </body>
-<!--Scripts -->
-<!--<script src="/js/ajaxnav.js"></script>-->
-<!--Accordion-->
-<script>
-$("button").click(function(){
-  $(this).find('i').toggleClass('fa-plus fa-minus')
-});
-</script>
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var expand = this.nextElementSibling;
-      if (expand.style.display === "block") {
-        expand.style.display = "none";
-      } else {
-        expand.style.display = "block";
-      }
-    });
-  }
-  </script>
-<!--Sidebar-->
-<script src='js/icons.js'></script>
-<script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-    
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    </script>
-<!--Epsi-->
-<script src="/live2d-widget-model-epsilon2_1/live2d-widget-model-epsilon2_1/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d-widget-model-epsilon2_1/","pluginJsPath":"live2d-widget-model-epsilon2_1/lib/","pluginModelPath":"live2d-widget-model-epsilon2_1/assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2d-widget-model-epsilon2_1/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.model.json"},"display":{"position":"right","width":150,"height":279},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 
 <!--Pages Other Than Updates-->
 <!--peepeepoopoo-->
