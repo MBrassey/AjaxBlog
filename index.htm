@@ -74,6 +74,14 @@
 <!--Scripts -->
 <script src="/js/ajaxnav.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
+<!--Collapse Div-->
+<script>
+    $(document).ready(function(){
+      $("clear").click(function(){
+        $("UnderContentWindow").empty();
+      });
+    });
+    </script>
 <!--Accordion-->
 <script>
 $("button").click(function(){
@@ -116,6 +124,7 @@ $("button").click(function(){
   $(document).ready(function() { 
       $('.pppp').click(function() { 
           $("div.UnderContentWindow").html( 
+            "<button class='clear accordion w3-padding'><i style='font-size:18px;color:#B2C8F1' class='fas fa-plus'></i></button>"+
             "<p class='w3-opacity'><b>PeePeePooPoo:</b></p>"+
             "<div class='w3-panel w3-luc1d w3-card w3-display-container'>"+
             "<p class='w3-text-luc1d-green'><b>is a pretty nice name </b></p>"+
