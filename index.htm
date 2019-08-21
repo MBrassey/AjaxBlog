@@ -7,6 +7,7 @@
     <button class="pppp"><a href="#" class="w3-bar-item w3-button">peepeepoopoo</a></button>
     <a href="#" class="w3-bar-item w3-button">Jurgen</a>
     <a href="#" class="w3-bar-item w3-button">Sven</a>
+    <a href="html/pppp.htm" id="aUrl">Nice</a>
   </div>
 
 <title>Luc1d</title>
@@ -24,7 +25,7 @@
   <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
 </div>
 
-
+<div id="divPage"></div>
 <div class="w3-container w3-content">
 
 <div class="w3-panel-header w3-white w3-card w3-display-container">
@@ -72,6 +73,12 @@
 <!--Scripts -->
 <script src="/js/ajaxnav.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
+<!--Load Content-->
+<script>
+$('#aUrl').click(function () { 
+  $('#divPage').load(this.href); 
+});
+</script>
 <!--Accordion-->
 <script>
 $("button").click(function(){
