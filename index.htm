@@ -92,10 +92,11 @@
       $('#AboveContentWindow').load('html/s.htm');
   });
 </script>
+
 <script>
-  $('.clear').click(function() { 
+$(document).on('click', '#clear .clickingElement', function() {
       $('#AboveContentWindow').empty();
-  });
+});
 </script>
 <!--Accordion-->
 <script>
