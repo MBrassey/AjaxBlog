@@ -22,7 +22,7 @@
 .w3-hover-border-theme:hover {border-color:#607d8b !important}
 
 .accordion {position:absolute;right:0;top:0;background-color: #eee;color: #444;cursor: pointer;border: none;text-align: left;outline: none;transition: 0.4s;}
-.clear {position:absolute;right:0;top:0;background-color: #eee;color: #444;cursor: pointer;border: none;text-align: left;outline: none;transition: 0.4s;}
+.close {position:absolute;right:0;top:0;background-color: #eee;color: #444;cursor: pointer;border: none;text-align: left;outline: none;transition: 0.4s;}
 .expand {padding: 0 0px;display: none;background-color: #eee;overflow: hidden;}
 .active
 .accordion:hover {background-color: #BEC3BD;}
