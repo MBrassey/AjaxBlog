@@ -97,9 +97,8 @@ $(document).on('click', '.clear', function() {
       $('#AboveContentWindow').empty();
 });
 </script>
-<!--Accordion-->
+<!--Accordion  $("button").click(function(){ -->
 <script>
-
 $(document).on('click', '.accordion', function() {  
   $(this).find('i').toggleClass('fa-plus fa-minus')
 });
@@ -109,7 +108,7 @@ $(document).on('click', '.accordion', function() {
   var i;
   
   for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
+    acc[i].on('click', '.accordion', function() {  
       this.classList.toggle("active");
       var expand = this.nextElementSibling;
       if (expand.style.display === "block") {
