@@ -5,8 +5,8 @@
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
     <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
     <a href="#" class="pppp w3-bar-item w3-button">PeePeePooPoo</a>
-    <a href="#" class="ppp w3-bar-item w3-button">Jurgen</a>
-    <a href="#" class="ppp w3-bar-item w3-button">Sven</a>
+    <a href="#" class="pp w3-bar-item w3-button">Jurgen</a>
+    <a href="#" class="pp w3-bar-item w3-button">Sven</a>
   </div>
 
 <title>Luc1d</title>
@@ -85,6 +85,11 @@
       $('#UnderContentWindow').load('html/pppp.htm');
   });
 </script>
+<script>
+  $('.pp').click(function() { 
+      $('#UnderContentWindow').load('html/pppp.htm');
+  });
+</script>
 <!--Accordion-->
 <script>
 $("button").click(function(){
@@ -133,14 +138,6 @@ $("button").click(function(){
             "<p>but its a pig..</p>"+
             "<p class='w3-text-luc1d-blue'>8.17.2019</p>"+
             "</div>"); 
-      }) 
-
-  }) 
-</script> 
-<script> 
-  $(document).ready(function() { 
-      $('.ppp').click(function() { 
-          $("div.UnderContentWindow").html('<object data="html/pppp.htm">'); 
       }) 
 
   }) 
