@@ -130,12 +130,10 @@ $("button").click(function(){
 
   }) 
 </script> 
-<script> 
-  $(document).ready(function() { 
-      $('.ppp').click(function() { 
-          $("div.UnderContentWindow").html('<object data="html/pppp.htm">'); 
-      }) 
 
-  }) 
-</script> 
+<script>
+  $(function(){
+      $('#UnderContentWindow').load('html/pppp.htm');
+  });
+</script>
 </html>
