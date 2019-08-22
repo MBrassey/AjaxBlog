@@ -75,8 +75,11 @@
 <script src="/js/ajaxnav.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <!--ContentLoader-->
+
 <script>
-  $("#UnderContentWindow").html('<object data="html/updates.htm">');
+  $(function(){
+      $('#UnderContentWindow').load('html/pppp.htm');
+  });
 </script>
 <!--Accordion-->
 <script>
@@ -130,10 +133,12 @@ $("button").click(function(){
 
   }) 
 </script> 
+<script> 
+  $(document).ready(function() { 
+      $('.ppp').click(function() { 
+          $("div.UnderContentWindow").html('<object data="html/pppp.htm">'); 
+      }) 
 
-<script>
-  $(function(){
-      $('#UnderContentWindow').load('html/pppp.htm');
-  });
-</script>
+  }) 
+</script> 
 </html>
