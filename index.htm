@@ -99,7 +99,8 @@ $(document).on('click', '.clear', function() {
 </script>
 <!--Accordion-->
 <script>
-$("button").click(function(){
+
+$(document).on('click', '.accordion', function() {  
   $(this).find('i').toggleClass('fa-plus fa-minus')
 });
 </script>
