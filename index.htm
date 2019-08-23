@@ -112,7 +112,7 @@ $(document).on('click', '.accordion', function() {
   var i;
   
   for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener.on("click", ".accordion", function(){
+    acc[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var expand = this.nextElementSibling;
       if (expand.style.display === "block") {
