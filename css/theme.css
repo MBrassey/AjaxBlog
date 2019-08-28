@@ -43,7 +43,7 @@
     width: 400px;
     min-width: 300px;
     height: 56px;
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .07);
     display: flex;
     justify-content: space-between;
     align-items: right;
