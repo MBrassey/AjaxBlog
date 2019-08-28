@@ -22,6 +22,7 @@
 <div class="w3-bar w3-large w3-theme-d4">
   <a href="#" class="w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
   <span class="w3-bar-item">Luc1d</span>
+  <div id='sound_button' onClick="playpause()" ><img title='Music Playing' alt='Play The Music' src='https://cdn3.iconfinder.com/data/icons/eightyshades/512/29_Sound_alt-24.png' /></div>
   <a href="#" class="home w3-bar-item w3-button w3-right"><i class="fa fa-home"></i></a>
 </div>
 
@@ -76,6 +77,15 @@
 <script src="/js/audio.js"></script>
 <script src="/js/ajaxnav.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
+<!--Audio-->
+<script type="text/javascript">
+  // Background Sound Play/Pause Script:
+  // Description: Background Music Will Be On Via Click And And Will Be Off On Other Click With Image Change Also By Pure JavaScript.
+  // Copyright EXEIdeas International 2013. All Right Reserved.
+  function playpause() { var snd = document.getElementById("sound"); var snd_btn = document.getElementById("sound_button"); snd.muted = !snd.muted; if(snd.muted){ snd_btn.innerHTML = "<img alt='Pause The Music' title='Music Paused' src='https://cdn3.iconfinder.com/data/icons/eightyshades/512/30_Sound_off-24.png' />"; } else{ snd_btn.innerHTML = "<img alt='Play The Music' title='Music Palying' src='https://cdn3.iconfinder.com/data/icons/eightyshades/512/29_Sound_alt-24.png' />"; } }
+  </script>
+  <audio autoplay="true" loop="true" width="0" height="0" id="sound" src="music/1.mp3" type="audio/mp3" ></audio>
+  <noembed><bgsound src="music/1.mp3" loop="infinite"/></noembed>
 <!--ContentLoader-->
 <!--Pages Other Than Updates-->
 <script>
