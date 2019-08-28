@@ -80,12 +80,10 @@
 <!--Audio-->
 <script type="text/javascript">
   // Background Sound Play/Pause Script:
-  // Description: Background Music Will Be On Via Click And And Will Be Off On Other Click With Image Change Also By Pure JavaScript.
-  // Copyright EXEIdeas International 2013. All Right Reserved.
   function playpause() { var snd = document.getElementById("sound"); var snd_btn = document.getElementById("sound_button"); snd.muted = !snd.muted; if(snd.muted){ snd_btn.innerHTML = "<img alt='Pause The Music' title='Music Paused' src='https://cdn3.iconfinder.com/data/icons/eightyshades/512/30_Sound_off-24.png' />"; } else{ snd_btn.innerHTML = "<img alt='Play The Music' title='Music Palying' src='https://cdn3.iconfinder.com/data/icons/eightyshades/512/29_Sound_alt-24.png' />"; } }
   </script>
-  <audio autoplay="true" loop="true" width="0" height="0" id="sound" src="music/1.mp3" type="audio/mp3" ></audio>
-  <noembed><bgsound src="music/1.mp3" loop="infinite"/></noembed>
+  <audio autoplay="true" loop="true" width="0" height="0" id="sound" src="music/1.mp3" type="audio/mpeg" ></audio>
+  <noembed><bgsound src="https://cdn3.iconfinder.com/data/icons/eightyshades/512/29_Sound_alt-24.png" loop="infinite"/></noembed>
 <!--ContentLoader-->
 <!--Pages Other Than Updates-->
 <script>
