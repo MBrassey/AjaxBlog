@@ -126,6 +126,13 @@ $(document).on('click', '.accordion', function() {
 <!--Sidebar-->
 <script src='js/icons.js'></script>
 <script>
+$(document).on('click', function(event) {
+  if (!$(event.target).closest('#mySidebar').length) {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+});
+</script>
+<script>
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
     }
