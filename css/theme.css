@@ -28,4 +28,4 @@
 .expand {padding: 0 0px;display: none;background-color: #eee;overflow: hidden;}
 .active
 .accordion:hover {background-color: #BEC3BD;}
-.aplayer {position:absolute;right:60px;top:5px;width:250px;height:32px;padding: 0 0px;background-color: #BEC3BD;color: #fff;cursor: pointer;border: none;outline: none;}
+.aplayer {position:absolute;right:64px;top:5px;width:250px;height:32px;padding: 0 0px;background-color: #BEC3BD;color: #fff;cursor: pointer;border: none;outline: none;}
