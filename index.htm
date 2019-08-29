@@ -22,13 +22,8 @@
 <div class="w3-bar w3-large w3-theme-d4">
   <a href="#" class="w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
   <span class="w3-bar-item">Luc1d</span>
-  <audio id="player" src="music/1.mp3"></audio>
-<div>
-    <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('player').play()"><i class="fa fa-volume-up"></i></a>
-    <button onclick="document.getElementById('player').play()">Play</button>
-    <button onclick="document.getElementById('player').pause()">Pause</button>
-    <button onclick="document.getElementById('player').muted=!document.getElementById('player').muted">Mute/ Unmute</button>
-</div>
+  <audio id="losAudio" src="http://upload.wikimedia.org/wikipedia/en/4/45/ACDC_-_Back_In_Black-sample.ogg">Audio not supported</audio>
+  <button id="btn_playPause"></button>
   <a href="#" class="home w3-bar-item w3-button w3-right"><i class="fa fa-home"></i></a>
 </div>
 
@@ -65,17 +60,6 @@
 
  </div>
  <div id="UnderContentWindow" class="UnderContentWindow"></div>
- 
- <!-- Block experimentation:
- <div class="w3-card" style="width:30%">
-    <img src="https://spee.ch/e/avatar1.jpeg" alt="Person" style="width:100%">
-    <div class="w3-container">
-      <h4><b>Block</b></h4>
-      <p>Description</p>
-    </div>
-  </div>
--->
-
 </div>
 
 </body>
@@ -83,6 +67,19 @@
 <script src="/js/audio.js"></script>
 <script src="/js/ajaxnav.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
+<!--Audio-->
+<script>
+var audio = document.getElementById("losAudio");
+var btn_playPause = document.getElementById("btn_playPause");
+
+function losAudio_playPause() {
+  var isPaused = losAudio.paused;
+  losAudio[isPaused ? "play" : "pause"]();
+  this.style.backgroundPosition= "0 "+ (isPaused ? "-32px":"0px");
+}
+
+btn_playPause.addEventListener("click", losAudio_playPause);
+</script>
 <!--ContentLoader-->
 <!--Pages Other Than Updates-->
 <script>
