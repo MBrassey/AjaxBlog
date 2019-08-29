@@ -3,10 +3,11 @@
 
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-    <button class="pppp"><a href="#" class="w3-bar-item w3-button">peepeepoopoo</a></button>
-    <a href="#" class="w3-bar-item w3-button">Jurgen</a>
-    <a href="#" class="w3-bar-item w3-button">Sven</a>
+    <button onclick="w3_close()" class="w3-bar-item w3-large w3-right-align closeside">Close</button>
+    <a href="#" class="pp w3-bar-item w3-button">PeePeePooPoo</a>
+    <a href="#" class="pp w3-bar-item w3-button">PeePeePooPoo</a>
+    <a href="#" class="pp w3-bar-item w3-button">Jurgen</a>
+    <a href="#" class="s w3-bar-item w3-button">Sven</a>
   </div>
 
 <title>Luc1d</title>
@@ -21,16 +22,18 @@
 <div class="w3-bar w3-large w3-theme-d4">
   <a href="#" class="w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
   <span class="w3-bar-item">Luc1d</span>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+  <div id='sound_button' onClick="playpause()" ><img title='Music Playing' alt='Play The Music' src='https://cdn3.iconfinder.com/data/icons/eightyshades/512/29_Sound_alt-24.png' /></div>
+  <a href="#" class="home w3-bar-item w3-button w3-right"><i class="fa fa-home"></i></a>
 </div>
 
 
-<div class="w3-container w3-content">
+<div class="w3-container w3-content"onclick="w3_close()">
 
 <div class="w3-panel-header w3-white w3-card w3-display-container">
     <img alt="Luc1d" src="https://spee.ch/7/Luc1d.jpg" />
  </div>
- 
+
+ <div id="AboveContentWindow" class="AboveContentWindow"></div>
  <div id="ajaxhome" class="ContentWindow">
 
  <p class="w3-opacity"><b>Updates:</b></p>
@@ -55,7 +58,8 @@
  </div>
 
  </div>
-
+ <div id="UnderContentWindow" class="UnderContentWindow"></div>
+ 
  <!-- Block experimentation:
  <div class="w3-card" style="width:30%">
     <img src="https://spee.ch/e/avatar1.jpeg" alt="Person" style="width:100%">
@@ -70,11 +74,45 @@
 
 </body>
 <!--Scripts -->
+<script src="/js/audio.js"></script>
 <script src="/js/ajaxnav.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
-<!--Accordion-->
+<!--Audio-->
+<script type="text/javascript">
+  function playpause() { var snd = document.getElementById("sound"); var snd_btn = document.getElementById("sound_button"); snd.muted = !snd.muted; if(snd.muted){ snd_btn.innerHTML = "<img alt='Pause The Music' title='Music Paused' src='https://cdn3.iconfinder.com/data/icons/eightyshades/512/30_Sound_off-24.png' />"; } else{ snd_btn.innerHTML = "<img alt='Play The Music' title='Music Palying' src='https://cdn3.iconfinder.com/data/icons/eightyshades/512/29_Sound_alt-24.png' />"; } }
+  </script>
+  <audio autoplay="true" loop="true" width="0" height="0" id="sound" src="music/1.mp3" type="audio/mp3" ></audio>
+  <noembed><bgsound src="music/1.mp3" loop="infinite"/></noembed>
+<!--ContentLoader-->
+<!--Pages Other Than Updates-->
 <script>
-$("button").click(function(){
+  $(function(){
+      $('#UnderContentWindow').load('html/updates.htm');
+  });
+</script>
+<script>
+  $('.pp').click(function() { 
+      $('#AboveContentWindow').load('html/pppp.htm');
+  });
+</script>
+<script>
+  $('.s').click(function() { 
+      $('#AboveContentWindow').load('html/s.htm');
+  });
+</script>
+<script>
+$(document).on('click', '.close', function() {
+      $('#AboveContentWindow').empty();
+});
+</script>
+<script>
+  $(document).on('click', '.home', function() {
+        $('#AboveContentWindow').empty();
+  });
+  </script>
+<!--Accordion  $("button").click(function(){ -->
+<script>
+$(document).on('click', '.accordion', function() {  
   $(this).find('i').toggleClass('fa-plus fa-minus')
 });
 </script>
@@ -96,6 +134,7 @@ $("button").click(function(){
   </script>
 <!--Sidebar-->
 <script src='js/icons.js'></script>
+
 <script>
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
@@ -107,22 +146,4 @@ $("button").click(function(){
     </script>
 <!--Epsi-->
 <script src="/live2d-widget-model-epsilon2_1/live2d-widget-model-epsilon2_1/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d-widget-model-epsilon2_1/","pluginJsPath":"live2d-widget-model-epsilon2_1/lib/","pluginModelPath":"live2d-widget-model-epsilon2_1/assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2d-widget-model-epsilon2_1/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.model.json"},"display":{"position":"right","width":150,"height":279},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
-
-<!--Pages Other Than Updates-->
-<!--peepeepoopoo-->
-<script> 
-  $(document).ready(function() { 
-      $('.pppp').click(function() { 
-          $("div.ContentWindow").html( 
-            "<p class='w3-opacity'><b>PeePeePooPoo:</b></p>"+
-            "<div class='w3-panel w3-luc1d w3-card w3-display-container'>"+
-            "<p class='w3-text-luc1d-green'><b>is a pretty nice name </b></p>"+
-            "<p>but its a pig..</p>"+
-            "<p class='w3-text-luc1d-blue'>8.17.2019</p>"+
-            "</div>"); 
-      }) 
-
-  }) 
-</script> 
-
 </html>
