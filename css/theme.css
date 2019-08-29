@@ -29,4 +29,4 @@
 .active
 .accordion:hover {background-color: #BEC3BD;}
 .aplayer {position:absolute;right:64px;top:5px;width:250px;height:32px;padding: 0 0px;background-color: #BEC3BD;color: #fff;cursor: pointer;border: none;outline: none;}
-#btn_playPause{background:url(http://i.stack.imgur.com/ENFH5.png) no-repeat;border:none;width:32px;height:32px;cursor:pointer;outline:none;position:absolute;right:55px;top:5px;width:28px;height:28px;padding: 0 0px;}
+#btn_playPause{background:url(https://spee.ch/2/playpause.png) no-repeat;border:none;width:28px;height:28px;cursor:pointer;outline:none;position:absolute;right:55px;top:5px;width:28px;height:28px;padding: 0 0px;}
