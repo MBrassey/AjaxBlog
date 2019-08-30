@@ -4,7 +4,7 @@
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
     <button onclick="w3_close()" class="w3-bar-item w3-large w3-right-align closeside">Close</button>
-    <a href="#myAnchor" id="anchor1" class="pp w3-bar-item w3-button anchorLink">PeePeePooPoo</a>
+    <a href="#" class="pp w3-bar-item w3-button">PeePeePooPoo</a>
     <a href="#" class="pp w3-bar-item w3-button">PeePeePooPoo</a>
     <a href="#" class="pp w3-bar-item w3-button">Jurgen</a>
     <a href="#" class="s w3-bar-item w3-button">Sven</a>
@@ -68,14 +68,7 @@
 <script src="/js/ajaxnav.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <!--Anchor-->
-<script>
-$('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
-</script>
+
 <!--Audio-->
 <script>
 var audio = document.getElementById("losAudio");
