@@ -123,13 +123,13 @@ $(document).on('click', '.close', function() {
 </script>
 <script>
   $(document).on('click', '.home', function() {
+    $('#AboveContentWindow').empty();
     var href = $.attr(this, 'href');
         $root.animate({
             scrollTop: $(href).offset().top
         }, 900, function () {
             window.location.hash = href;
         });
-        $('#AboveContentWindow').empty();
          
         return false;
     });
