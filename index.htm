@@ -121,22 +121,6 @@ $(document).on('click', '.close', function() {
       $('#AboveContentWindow').empty();
 });
 </script>
-<script>
-  $(document).on('click', '.home', function() {
-    var href = $.attr(this, 'href');
-        $root.animate({
-            scrollTop: $(href).offset().top
-        }, 900, function () {
-            window.location.hash = href;
-        });
-         
-        return false;
-        $('#AboveContentWindow').empty();
-    });
- 
-})
-  });
-  </script>
 <!--Speaker Icon-->
 <script>
     $(document).on('click', '.player', function() {  
