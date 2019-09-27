@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/highlight.js.css">
+
+ <div><pre><code>make a link: <a href="">link</a></code></pre></div>
+ 
+<!--Highlight.js-->
+<script src="js/highlight.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+</html>
