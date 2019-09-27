@@ -1,149 +1,18 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-large w3-right-align closeside">Close</button>
-    <a href="#" class="pp w3-bar-item w3-button">PeePeePooPoo</a>
-    <a href="#" class="pp w3-bar-item w3-button">PeePeePooPoo</a>
-    <a href="#" class="pp w3-bar-item w3-button">Jurgen</a>
-    <a href="#" class="s w3-bar-item w3-button">Sven</a>
-  </div>
-
-<title>Luc1d</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/phi.css">
-<link rel="stylesheet" href="css/theme.css">
-<link rel="stylesheet" href="css/font.css">
-<body class="w3-theme-l4">
+<link rel="stylesheet" href="css/highlight.js.css">
 
-<div style="min-width:400px">
-
-<div class="w3-bar w3-large w3-theme-d4">
-  <a href="#" class="w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-  <span class="w3-bar-item">Luc1d</span>
-  <audio id="player" src="music/1.mp3"></audio>
-<div>
-    <a href="#" class="w3-bar-item w3-button" onclick="document.getElementById('player').play()"><i class="fa fa-volume-up"></i></a>
-    <button onclick="document.getElementById('player').play()">Play</button>
-    <button onclick="document.getElementById('player').pause()">Pause</button>
-    <button onclick="document.getElementById('player').muted=!document.getElementById('player').muted">Mute/ Unmute</button>
-</div>
-  <a href="#" class="home w3-bar-item w3-button w3-right"><i class="fa fa-home"></i></a>
-</div>
-
-
-<div class="w3-container w3-content"onclick="w3_close()">
-
-<div class="w3-panel-header w3-white w3-card w3-display-container">
-    <img alt="Luc1d" src="https://spee.ch/7/Luc1d.jpg" />
- </div>
-
- <div id="AboveContentWindow" class="AboveContentWindow"></div>
- <div id="ajaxhome" class="ContentWindow">
-
- <p class="w3-opacity"><b>Updates:</b></p>
- <div class="w3-panel w3-luc1d w3-card w3-display-container">
-   <p class="w3-text-luc1d-green"><b>Something cool I saw on my way .. Auryn is so cool! He is learning to code with me. </b></p>
-   <p>noiiiice! heres some text if you want to read some mooooooooooooooooooooooooooooorreeeee......</p>
-   <button class="accordion w3-padding"><i style='font-size:18px;color:#B2C8F1' class='fas fa-plus'></i></button>
-   <div class="expand">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-   <p class="w3-text-luc1d-blue">8.17.2019</p>
- </div>
+ <div><pre><code>make a link: <a href="">link</a></code></pre></div>
  
- <div class="w3-panel w3-luc1d w3-card w3-display-container">
-   <p class="w3-text-luc1d-green"><b>Hello World</b></p>
-   <p>Genesis Entry</p>
-   <button class="accordion w3-padding"><i style='font-size:18px;color:#B2C8F1' class='fas fa-plus'></i></button>
-   <div class="expand">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-   <p class="w3-text-luc1d-blue">8.16.2019</p>
- </div>
-
- </div>
- <div id="UnderContentWindow" class="UnderContentWindow"></div>
- 
- <!-- Block experimentation:
- <div class="w3-card" style="width:30%">
-    <img src="https://spee.ch/e/avatar1.jpeg" alt="Person" style="width:100%">
-    <div class="w3-container">
-      <h4><b>Block</b></h4>
-      <p>Description</p>
-    </div>
-  </div>
--->
-
-</div>
-
-</body>
-<!--Scripts -->
-<script src="/js/audio.js"></script>
-<script src="/js/ajaxnav.js"></script>
-<script src="js/jquery-3.4.1.min.js"></script>
-<!--ContentLoader-->
-<!--Pages Other Than Updates-->
+<!--Highlight.js-->
+<script src="js/highlight.js"></script>
 <script>
-  $(function(){
-      $('#UnderContentWindow').load('html/updates.htm');
-  });
-</script>
-<script>
-  $('.pp').click(function() { 
-      $('#AboveContentWindow').load('html/pppp.htm');
-  });
-</script>
-<script>
-  $('.s').click(function() { 
-      $('#AboveContentWindow').load('html/s.htm');
-  });
-</script>
-<script>
-$(document).on('click', '.close', function() {
-      $('#AboveContentWindow').empty();
-});
-</script>
-<script>
-  $(document).on('click', '.home', function() {
-        $('#AboveContentWindow').empty();
-  });
-  </script>
-<!--Accordion  $("button").click(function(){ -->
-<script>
-$(document).on('click', '.accordion', function() {  
-  $(this).find('i').toggleClass('fa-plus fa-minus')
-});
-</script>
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var expand = this.nextElementSibling;
-      if (expand.style.display === "block") {
-        expand.style.display = "none";
-      } else {
-        expand.style.display = "block";
-      }
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
     });
-  }
-  </script>
-<!--Sidebar-->
-<script src='js/icons.js'></script>
-
-<script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-    
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    </script>
-<!--Epsi-->
-<script src="/live2d-widget-model-epsilon2_1/live2d-widget-model-epsilon2_1/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d-widget-model-epsilon2_1/","pluginJsPath":"live2d-widget-model-epsilon2_1/lib/","pluginModelPath":"live2d-widget-model-epsilon2_1/assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2d-widget-model-epsilon2_1/live2d-widget-model-epsilon2_1/assets/Epsilon2.1.model.json"},"display":{"position":"right","width":150,"height":279},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+  });
+</script>
 </html>
