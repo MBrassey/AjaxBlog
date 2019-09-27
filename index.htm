@@ -49,6 +49,14 @@
 <!--Scripts -->
 <script src="/js/audio.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
+<!--Highlight.js-->
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+</script>
 <!--Anchor-->
 <script>
 jQuery(document).ready(function($){
