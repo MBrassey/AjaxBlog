@@ -16,7 +16,65 @@
   <div class="expand">
    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><pre><code><a href="luc1d.io">Luc1d</a></code></pre></a></pre></p>
 
-   <pre hljs><code class="html">...<html>...</code></pre>
+   
+   <pre><code class="groovy">#!/usr/bin/env groovy
+      package model
+      
+      import groovy.transform.CompileStatic
+      import java.util.List as MyList
+      
+      trait Distributable {
+          void distribute(String version) {}
+      }
+      
+      @CompileStatic
+      class Distribution implements Distributable {
+          double number = 1234.234 / 567
+          def otherNumber = 3 / 4
+          boolean archivable = condition ?: true
+          def ternary = a ? b : c
+          String name = &quot;Guillaume&quot;
+          Closure description = null
+          List&lt;DownloadPackage&gt; packages = []
+          String regex = ~/.*foo.*/
+          String multi = &#39;&#39;&#39;
+              multi line string
+          &#39;&#39;&#39; + &quot;&quot;&quot;
+              now with double quotes and ${gstring}
+          &quot;&quot;&quot; + $/
+              even with dollar slashy strings
+          /$
+      
+          /**
+           * description method
+           * @param cl the closure
+           */
+          void description(Closure cl) { this.description = cl }
+      
+          void version(String name, Closure versionSpec) {
+              def closure = { println &quot;hi&quot; } as Runnable
+      
+              MyList ml = [1, 2, [a: 1, b:2,c :3]]
+              for (ch in &quot;name&quot;) {}
+      
+              // single line comment
+              DownloadPackage pkg = new DownloadPackage(version: name)
+      
+              check that: true
+      
+              label:
+              def clone = versionSpec.rehydrate(pkg, pkg, pkg)
+              /*
+                  now clone() in a multiline comment
+              */
+              clone()
+              packages.add(pkg)
+      
+              assert 4 / 2 == 2
+          }
+      }
+      </code></pre>
+
 
  </div>
   <p class="w3-text-luc1d-blue">8.17.2019</p>
