@@ -41,8 +41,8 @@
   max-width: 1200px;
 }
 
-/* The Close Button */
-.close {
+/* The Close2 Button */
+.close2 {
   color: #B2C5FD;
   position: absolute;
   top: 10px;
@@ -51,8 +51,8 @@
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close2:hover,
+.close2:focus {
   color: none;
   text-decoration: none;
   cursor: pointer;
