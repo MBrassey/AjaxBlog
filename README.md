@@ -1,2 +1,2 @@
 # luc1d-dev.github.io
-Personal Blog
+─── [Personal Blog](https://luc1d-dev.github.io)
