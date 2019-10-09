@@ -5,7 +5,7 @@
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
     <button onclick="w3_close()" class="w3-bar-item w3-large w3-right-align closeside">Close</button>
     <a href="#" class="pp w3-bar-item w3-button">Blank</a>
-    <a href="#top" class="pp w3-bar-item w3-button">Link[1]</a>
+    <a href="#top" class="gpg w3-bar-item w3-button">My GPG Key</a>
     <a href="#top" class="pp w3-bar-item w3-button">Link[2]</a>
     <a href="#top" class="s w3-bar-item w3-button">Link[3]</a>
   </div>
@@ -92,6 +92,11 @@ btn_playPause.addEventListener("click", losAudio_playPause);
       $('#AboveContentWindow').load('html/pppp.htm');
   });
 </script>
+<script>
+    $('.gpg').click(function() { 
+        $('#AboveContentWindow').load('html/gpg.htm');
+    });
+  </script>
 <script>
   $('.s').click(function() { 
       $('#AboveContentWindow').load('html/s.htm');
