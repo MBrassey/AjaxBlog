@@ -6,7 +6,7 @@
     <button onclick="w3_close()" class="w3-bar-item w3-large w3-right-align closeside">Close</button>
     <a href="#" class="pp w3-bar-item w3-button">Blank</a>
     <a href="#top" class="gpg w3-bar-item w3-button">My GPG Key</a>
-    <a href="#top" class="pp w3-bar-item w3-button">Link[2]</a>
+    <a href="#top" class="cryptos w3-bar-item w3-button">My Cryptos</a>
     <a href="#top" class="s w3-bar-item w3-button">Link[3]</a>
   </div>
 
@@ -97,6 +97,11 @@ btn_playPause.addEventListener("click", losAudio_playPause);
         $('#AboveContentWindow').load('html/gpg.htm');
     });
   </script>
+<script>
+  $('.cryptos').click(function() { 
+      $('#AboveContentWindow').load('html/cryptos.htm');
+  });
+</script>
 <script>
   $('.s').click(function() { 
       $('#AboveContentWindow').load('html/s.htm');
