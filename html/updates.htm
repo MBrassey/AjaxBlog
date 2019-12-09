@@ -14,11 +14,55 @@
   <p>I wrote an application to keep Roblox characters awake and earning coin in any minigame, it turned out to be especially useful for Meep City.</p>
   <button class="accordion w3-padding"><i style='font-size:18px;color:#B2C8F1' class='fas fa-plus'></i></button>
   <div class="expand">
-   <p>I woke up this morning and went to my office to find my character in Meep City awake with my wife's character seated next to me on the swingset in my backyard. They had been online all night and earned several thousand Meep Coin. Obviously this is not usually possibe. Typically one is logged out of a Roblox game after 20 minites of inactivity, or in this case would have fallen asleep after 5 minites in Meep City. Considering this number of coin costs roughly $3,000 Robux or $35 in value, I started to feel like it was worth all the time coding Roboss.</p>
+   <p>I woke up this morning and went to my office to find my character in Meep City awake with my wife's character seated next to me on the swingset in my backyard. They had been online all night and earned several thousand Meep Coin. Obviously this is not usually possibe. Typically one is logged out of a Roblox game after 20 minites of inactivity, or in this case would have fallen asleep after 5 minites in Meep City. If you leave it on for a day and you have a PLUS membership you recieve something like 20,000 Meep Coin. Considering this number of coin costs roughly $3,000 Robux or $35 in value, I started to feel like it was worth all the time coding Roboss.</p>
    <p>Roboss is a stand alone application that sends a signal to your character in Roblox to ensure they never sleep. In my original design, I was experimenting with having my character speak wise sayings automatically so I kept this feature in the final release. I implimented randomized delays between awake and speach signals to avoid detection and simulate an organic human being like behaviour, in this way Roboss is completely undetectable.</p>
    <img src="img/RobossDemo.gif" width="797" height="495">
    <p>If you want to buy castles and fill them with every item in the game for epic parties, without spending your entire life and savings playing a kids game, you will need a source of Meep Coin, Roboss is definately an effective way to do it.</p>
    <p> I released Roboss opensource with the option to buy the pre-compiled executible for $5 on my <a href="https://github.com/luc1dLife/Roboss">GitHub</a>.</p>
+   <p>
+    <strong>What it does:</strong><br >
+    function awake() {
+    <br >
+    ... Sends signal to Roblox ensuring your character does not sleep ... 
+    ... Avoids detection algorithms by randomizing the delay between awake signals ...
+    <br >
+    } 
+    <br >
+    function sayings() {
+    <br >
+    ... Engages the Roblox window and automatically types a wise message from time to time ...
+    ... Avoids detection algorithms by randomizing the delay between sayings ... 
+    ... Respectfully stops speaking after 200 cycles and re-activates the speaking button ... 
+    <br >
+    }
+    <strong>What Roblox games does it work on?</strong><br >
+    Roboss works on all Roblox games. It works especially well for games that require your active participation to stay awake.
+    
+    <strong>How long will my character stay awake?</strong><br >
+    Roboss will keep your character awake as long as possible. Roboss also prevents network disconnection due to inactivity. If the Roblox server is updated or you have a physical or ISP related network disconnection, Roboss will stop working.
+    <br >
+    <strong>How much Meep Coin can I earn with Roboss?</strong><br >
+    Based on recent testing, Roboss deliveres around 20,000 Meep Coin per day to PLUS Members.
+    <br >
+    <strong>Will my account get banned?</strong><br >
+    No. Roboss uses methods to produce organic like activity simulating a real human being. It is completely undetectable.
+    <br >
+    <strong>Is Roboss Free?</strong><br >
+    Roboss is 100% Open Source and FREE to use and distribute. There's also an option to purchase the pre-compiled EXE for easy use.
+    <br>
+    <strong>Why did I make Roboss?</strong><br>
+    I made Roboss for fun, specifically for use in MeepCity.
+    <br >
+    <strong>How many Robux can you save by using Roboss?</strong><br>
+    In MeepCity, Roboss earns you $3,000 Robux worth of MeepCoin, this is $35 value per day!
+    <br >
+    <strong>Troubleshooting:</strong><br >
+    Roboss will close itself if a Roblox window is not open. Roboss will continually activate the Roblox window, so you will not be able to have a window on top of Roblox. You can use a second monitor with Roboss and Roblox open so you can continue using your computer normally on the other. When using the "Speak Wisely" function, if you click on another window at the same time as Roboss is trying to type the message in to Roblox, the text will instead be printed on the window you clicked.
+    <br >
+    <strong>ToDo:</strong><br >
+     Improve event handling and efficiency.
+     Add more functions such has automatic movements.
+   </p>
   </div>
   <p class="w3-text-luc1d-blue">11.22.2019</p>
 </div>
