@@ -26,6 +26,7 @@
 .top {position:absolute;right:0;bottom:0;background-color: #eee;color: #93AC6B;cursor: pointer;border: none;text-align: left;outline: none;transition: 0.4s;}
 .closeside {position:absolute;right:0;top:0;background-color: #eee;color: #D2ABB4;cursor: pointer;border: none;text-align: left;outline: none;transition: 0.4s;}
 .home {position:absolute;right:0;top:0;background-color: #BEC3BD;color: #fff;cursor: pointer;border: none;text-align: left;outline: none;transition: 0.4s;}
+.flote {position:absolute;right:0;top:0;background-color: #BEC3BD;color: #fff;cursor: pointer;border: none;text-align: left;outline: none;transition: 0.4s;background:url(https://spee.ch/c/flote.png)}
 .expand {padding: 0 0px;display: none;background-color: #eee;overflow: hidden;}
 .active
 .accordion:hover {background-color: #BEC3BD;}
