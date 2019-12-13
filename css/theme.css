@@ -27,9 +27,9 @@
 .closeside {position:absolute;right:0;top:0;background-color: #eee;color: #D2ABB4;cursor: pointer;border: none;text-align: left;outline: none;transition: 0.4s;}
 .home {position:absolute;right:0;top:0;background-color: #BEC3BD;color: #fff;cursor: pointer;border: none;text-align: left;outline: none;transition: 0.4s;}
 .flote {background:url(https://spee.ch/1/flote1.png) no-repeat;border:none;width:28px;height:28px;cursor:pointer;outline:none;position:absolute;right:113px;top:7px;padding: 0 0px;}
-.github {background:url(https://spee.ch/a/githubio.png) no-repeat;border:none;width:28px;height:28px;cursor:pointer;outline:none;position:absolute;right:98px;top:7px;padding: 0 0px;}
+.github {background:url(https://spee.ch/a/githubio.png) no-repeat;border:none;width:28px;height:28px;cursor:pointer;outline:none;position:absolute;right:148px;top:7px;padding: 0 0px;}
+#btn_playPause{background:url(https://spee.ch/0/onoff.png) no-repeat;border:none;width:28px;height:28px;cursor:pointer;outline:none;position:absolute;right:65px;top:5px;padding: 0 0px;}
 .expand {padding: 0 0px;display: none;background-color: #eee;overflow: hidden;}
 .active
 .accordion:hover {background-color: #BEC3BD;}
 .aplayer {position:absolute;right:64px;top:5px;width:250px;height:32px;padding: 0 0px;background-color: #BEC3BD;color: #fff;cursor: pointer;border: none;outline: none;}
-#btn_playPause{background:url(https://spee.ch/0/onoff.png) no-repeat;border:none;width:28px;height:28px;cursor:pointer;outline:none;position:absolute;right:65px;top:5px;padding: 0 0px;}
