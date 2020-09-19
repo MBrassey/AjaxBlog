@@ -1,4 +1,4 @@
-# luc1dLife.github.io
+# AjaxBlog
 
 > Ajax Blog Concept. 
 
